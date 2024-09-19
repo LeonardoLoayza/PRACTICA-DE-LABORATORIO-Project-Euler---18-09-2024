@@ -1,11 +1,9 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 int main() {
     
-    string number = 
+    std::string number = 
     "73167176531330624919225119674426574742355349194934"
     "96983520312774506326239578318016984801869478851843"
     "85861560789112949495459501737958331952853208805511"
@@ -44,8 +42,7 @@ int main() {
         }
     }
 
-    // Imprimir el mayor producto encontrado
-    cout << "El mayor producto de 13 dígitos adyacentes es: " << max_product << endl;
+    std::cout << max_product;
 
     return 0;
 }
