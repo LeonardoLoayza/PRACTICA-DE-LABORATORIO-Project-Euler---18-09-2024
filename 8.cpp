@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    // El número de 1000 dígitos representado como una cadena
+    
     string number = 
     "73167176531330624919225119674426574742355349194934"
     "96983520312774506326239578318016984801869478851843"
@@ -27,18 +27,18 @@ int main() {
     "05886116467109405077541002256983155200055935729725"
     "71636269561882670428252483600823257530420752963450";
     
-    long long max_product = 0;  // El mayor producto encontrado
+    long long max_product = 0;  
     
-    // Recorrer cada conjunto de 13 dígitos consecutivos
+   
     for (int i = 0; i <= number.size() - 13; ++i) {
         long long product = 1;
         
-        // Calcular el producto de los 13 dígitos consecutivos
+        
         for (int j = 0; j < 13; ++j) {
-            product *= number[i + j] - '0';  // Convertir el carácter a entero
+            product *= number[i + j] - '0';  
         }
         
-        // Actualizar el máximo producto si el actual es mayor
+        
         if (product > max_product) {
             max_product = product;
         }
